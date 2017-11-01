@@ -1,0 +1,266 @@
+html,
+body {
+    height: 100%;
+}
+
+.wrap {
+    min-height: 100%;
+    height: auto;
+    margin: 0 auto -60px;
+    padding: 0 0 60px;
+}
+
+.wrap > .container {
+    padding: 50px 15px 20px;
+}
+
+.footer {
+    height: 60px;
+    background-color: #f5f5f5;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+}
+
+.jumbotron {
+    text-align: center;
+    background-color: transparent;
+}
+
+.jumbotron .btn {
+    font-size: 21px;
+    padding: 14px 24px;
+}
+
+.not-set {
+    color: #c55;
+    font-style: italic;
+}
+
+/* add sorting icons to gridview sort links */
+a.asc:after, a.desc:after {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    padding-left: 5px;
+}
+
+a.asc:after {
+    content: /*"\e113"*/ "\e151";
+}
+
+a.desc:after {
+    content: /*"\e114"*/ "\e152";
+}
+
+.sort-numerical a.asc:after {
+    content: "\e153";
+}
+
+.sort-numerical a.desc:after {
+    content: "\e154";
+}
+
+.sort-ordinal a.asc:after {
+    content: "\e155";
+}
+
+.sort-ordinal a.desc:after {
+    content: "\e156";
+}
+
+.grid-view th {
+    white-space: nowrap;
+}
+
+.hint-block {
+    display: block;
+    margin-top: 5px;
+    color: #999;
+}
+
+.error-summary {
+    color: #a94442;
+    background: #fdf7f7;
+    border-left: 3px solid #eed3d7;
+    padding: 10px 20px;
+    margin: 0 0 15px 0;
+}
+
+/* align the logout "link" (button in form) of the navbar */
+.nav li > form > button.logout {
+    padding: 15px;
+    border: none;
+}
+
+@media(max-width:767px) {
+    .nav li > form > button.logout {
+        display:block;
+        text-align: left;
+        width: 100%;
+        padding: 10px 15px;
+    }
+}
+
+.nav > li > form > button.logout:focus,
+.nav > li > form > button.logout:hover {
+    text-decoration: none;
+}
+
+.nav > li > form > button.logout:focus {
+    outline: none;
+}
+.wrapper{
+    width: 700px;
+    /*min-width: 250px;*/
+    margin: 0 auto;
+    border: 1px solid gray;
+    padding: 10px;
+    text-align: center;
+}
+h1{
+    margin: 10px 0;
+}
+#category-wrap{
+    /*height: 100%*/
+}
+.category{
+    width: 220px;
+    min-height: 100px;
+    display: inline-block;
+    /*float: left;*/
+    margin: 10px 5px;
+    text-align: center;
+    position: relative;
+    outline: 1px solid gray;
+    box-shadow: 2px 2px 10px 2px gray;
+    padding:0;
+}
+.category:hover{
+    cursor: pointer;
+    outline: 1px solid #005FA9;
+}
+.category-title{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #000000;
+    color: #FFFFFF;
+    height: 35px;
+    opacity: 0.7;
+    font: 16px Arial;
+    padding: 8px 0;
+
+}
+.category-title:hover{
+    cursor:pointer;
+    font-weight: bold;
+    opacity: 0.7;
+    color: #000000;
+    background-color: #FFFFFF;
+}
+
+.shadow {
+    display: none;
+    opacity: 0.8;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding: 16px;
+    z-index: 1050;
+    overflow: auto;
+    background-color: rgba(1, 1, 1, 0.75);
+
+}
+/*.window {
+    width:1px;
+    height:1px;
+
+}*/
+#fullImg{
+    display: none;
+    z-index: 2000;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: fixed;
+    padding: 0;
+}
+
+#fileclose {
+    position: fixed;
+    top:20px;
+    right: 20px;
+    z-index: 3000;
+    display: none;
+}
+
+#fileclose:hover{
+    opacity: 0.7;
+    cursor:pointer;
+}
+#fullimage-title{
+    position: fixed;
+    bottom: 0;
+    background-color: #FFFFFF;
+    opacity: 0.7;
+    z-index: 4000;
+    display: none;
+    height: 30px;
+    font: 18px Arial;
+    padding: 5px;
+}
+#arrow-right, #arrow-left{
+    position: fixed;
+    z-index: 3000;
+    display: none;
+}
+#arrow-right{
+    top: 200px;
+    right:20px;
+}
+#arrow-left{
+    top: 200px;
+    left:20px;
+}
+#arrow-right:hover, #arrow-left:hover{
+    opacity: 0.7;
+    cursor:pointer;
+}
+
+#waiting-img{
+    display: none;
+}
+
+#user-status{
+    display: none;
+}
+.image-in-category{
+    width: 220px;
+    min-height: 100px;
+    display: inline-block;
+    /*float: left;*/
+    margin: 10px 5px;
+    text-align: center;
+    position: relative;
+    outline: 1px solid gray;
+    box-shadow: 2px 2px 10px 2px gray;
+    padding:0;
+}
+
+.image-in-category:hover{
+    cursor: pointer;
+    outline: 1px solid #005FA9;
+}
+#category-title-hidden{
+    display: none;
+}
+.link-back{
+    display: none;
+}
