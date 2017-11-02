@@ -9,9 +9,9 @@
 //     itemSelector: '.category',
 //     column: 200
 // );
-// jQuery(function ($) {
-//     $('#category-wrap').masonry({
-//             itemSelector: '.category',
-//             column: 200
-//     });
-// });
+jQuery(function ($) {
+    $('#category-wrap').masonry({
+            itemSelector: '.category',
+            column: 200
+    });
+});
