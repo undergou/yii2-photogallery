@@ -47,18 +47,15 @@ $('.wrap-for-link').on('click', '.link-show-more', function(e){
                                     //
                                     // }
                                     $('#category-wrap').masonry('appended', elems);
-                                     $('#category-wrap').masonry();
+                                    // $('#category-wrap').masonry();
                                     //   $('#category-wrap').masonry('appended',elems);
-                                    //     $('#category-wrap').masonry('reloadItems');
-                                    //    $('#category-wrap').masonry();
+                                        $('#category-wrap').masonry('reloadItems');
+                                       $('#category-wrap').masonry();
                                     //   $('#category-wrap').masonry('reloadItems');
                                     //   $('#category-wrap').masonry( 'addItems', elems );
-                                    // jQuery(function ($) {
-                                    //     $('#category-wrap').masonry({
-                                    //             itemSelector: '.category',
-                                    //             column: 200
-                                    //     });
-                                    // });
+                                    $('#category-wrap').imagesLoaded().progress( function() {
+                                        $('#category-wrap').masonry('layout');
+                                    });
                                     // $('#category-wrap').masonry('reloadItems');
                                     // }, 1000);
 

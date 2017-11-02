@@ -14,4 +14,7 @@ jQuery(function ($) {
             itemSelector: '.category',
             column: 200
     });
+// $('#category-wrap').imagesLoaded().progress( function() {
+//     $('#category-wrap').masonry('layout');
+// });
 });

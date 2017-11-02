@@ -23,11 +23,11 @@ class AppAsset extends AssetBundle
     public $js = [
         'js/script.js',
         'js/image.js',
-        'js/jquery.js',
+//        'js/jquery.js',
         'js/scroll.js',
         'js/scroll-img.js',
-        'js/masonry.pkgd.min.js',
-        'js/optimize.js',
+//        'js/masonry.pkgd.min.js',
+//        'js/optimize.js',
     ];
     public $depends = [
         'yii\web\YiiAsset',
