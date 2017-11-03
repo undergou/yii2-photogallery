@@ -25,9 +25,9 @@ use yii\web\NotFoundHttpException;
     </div>
     <img id="waiting-img" src="../../images/photogallery/wait.gif" alt="">
     <p id="user-status"><?php echo $userStatus; ?></p>
-
+        <p id="category-title-hidden"><?= $category->title?> </p>
 <?php else: ?>
     <? throw new NotFoundHttpException('Page not found');?>
 <?php endif; ?>
 </div>
-<p id="category-title-hidden"><?= $category->title?> </p>
+

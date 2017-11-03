@@ -11,7 +11,7 @@
 // );
 jQuery(function ($) {
     $('#category-wrap').masonry({
-            itemSelector: '.category',
+            itemSelector: '.category-masonry',
             column: 200
     });
 // $('#category-wrap').imagesLoaded().progress( function() {

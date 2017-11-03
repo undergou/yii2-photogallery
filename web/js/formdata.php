@@ -14,12 +14,15 @@ switch($userStatus){
     $sql = "SELECT * FROM category WHERE status='guest' OR status='user' LIMIT 6 OFFSET ". $offset;
     break;
 }
+    $sqlImagesCount = "SELECT COUNT(*) FROM image";
+    $imagesCount = $pdo->query("$sqlImagesCount");
 
     class Data{
         public $img;
         public $link;
         public $title;
         public $end;
+        public $count;
     }
 
     $categories = $pdo->query("$sql");
@@ -36,6 +39,7 @@ switch($userStatus){
         $object->title = '<div class="category-title">'.$category["title"].' ('.$category["count"].')</div>';
         // $resp = '<div class="category"><a href="page/category/'.$category['slug'].'"><img src="images/photogallery/'. (($category['count'] != 0) ? $lastImage[0]['image'] : 'no-photo.jpg').'" width="220px">
         // <div class="category-title">'.$category["title"].' ('.$category["count"].')</div></a></div>';
+        $object->count = $imagesCount;
         array_push($array, $object);
         $i++;
     }

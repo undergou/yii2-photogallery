@@ -114,7 +114,7 @@ a.desc:after {
     outline: none;
 }
 .wrapper{
-    width: 700px;
+    /*width: 700px;*/
     /*min-width: 250px;*/
     margin: 0 auto;
     border: 1px solid gray;
@@ -258,9 +258,19 @@ h1{
     cursor: pointer;
     outline: 1px solid #005FA9;
 }
-#category-title-hidden{
+#category-title-hidden, #offset, #pagination-ul, #pages-number, #offset-back, .number-page-hidden{
     display: none;
 }
 .link-back{
     display: none;
+}
+#pagination-infinitescroll{
+    display: none;
+}
+.link-show-more-back:hover{
+    cursor: pointer;
+}
+.g {
+    width: 1px;
+    height: 1px;
 }
